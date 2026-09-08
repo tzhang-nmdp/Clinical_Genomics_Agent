@@ -1,6 +1,6 @@
 # Clinical Genomic Agent
 
-A FastAPI-based ReAct agent for the CIBMTR database that answers clinical and genomic questions through a hybrid retrieval pipeline. It exposes a web chat UI and a WhatsApp webhook, and runs fully locally using a quantised Gemma model via llama.cpp.
+A FastAPI-based ReAct agent proposed for the CIBMTR database that answers clinical and genomic questions through a hybrid retrieval pipeline. It exposes a web chat UI and a WhatsApp webhook, and runs fully locally using a quantised Gemma model via llama.cpp.
 
 ---
 
