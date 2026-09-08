@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CIBMTR Clinical Genomic Agent</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Nunito', Arial, Helvetica, sans-serif;
+      background: #f1f1f1;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* ── Floating panel ── */
+    #app {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 720px;
+      height: 82vh;
+      min-width: 320px;
+      min-height: 200px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      resize: both;          /* native resize handle */
+      z-index: 1000;
+      transition: box-shadow 0.2s;
+    }
+
+    #app.dragging { box-shadow: 0 16px 48px rgba(0,0,0,0.28); user-select: none; }
+
+    /* ── Minimised bubble ── */
+    #app.minimised {
+      border-radius: 50%;
+      resize: none;
+      cursor: pointer;
+    }
+
+    #app.minimised > *:not(header) { display: none !important; }
+
+    #app.minimised header {
+      min-height: 56px;
+      height: 56px;
+      padding: 0;
+      justify-content: center;
+      border-bottom: none;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    #app.minimised header > *:not(#btn-restore) { display: none !important; }
+
+    #btn-restore {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      line-height: 1;
+    }
+
+    #app.minimised #btn-restore { display: flex !important; align-items: center; justify-content: center; }
+
+    /* ── Header ── */
+    header {
+      padding: 0 12px 0 20px;
+      background: #fff;
+      border-bottom: 3px solid #dfc327;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-height: 72px;
+      cursor: grab;
+      flex-shrink: 0;
+      user-select: none;
+    }
+
+    header:active { cursor: grabbing; }
+
+    header img.cibmtr-logo { height: 48px; width: auto; display: block; }
+
+    header .header-divider { width: 1px; height: 36px; background: #cbcaca; }
+
+    header .header-title {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+      flex: 1;
+    }
+
+    header .header-title span:first-child {
+      font-size: 0.78rem; font-weight: 600; color: #007066;
+      text-transform: uppercase; letter-spacing: 0.6px;
+    }
+
+    header .header-title span:last-child { font-size: 1rem; font-weight: 700; color: #14365d; }
+
+    /* ── Header action buttons ── */
+    .hdr-btns { display: flex; gap: 6px; margin-left: auto; flex-shrink: 0; }
+
+    .hdr-btn {
+      width: 28px; height: 28px;
+      border: none; border-radius: 6px;
+      background: #f0f2f5; color: #555;
+      cursor: pointer; font-size: 1rem;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.15s;
+    }
+
+    .hdr-btn:hover { background: #e2e6ea; color: #14365d; }
+
+    /* ── Messages ── */
+    #messages {
+      flex: 1; overflow-y: auto; padding: 20px;
+      display: flex; flex-direction: column; gap: 12px;
+    }
+
+    .msg {
+      max-width: 80%; padding: 10px 14px; border-radius: 10px;
+      line-height: 1.5; font-size: 0.92rem; white-space: pre-wrap; word-break: break-word;
+    }
+
+    .msg.user {
+      align-self: flex-end; background: #0a71b3; color: #fff; border-bottom-right-radius: 2px;
+    }
+
+    .msg.agent {
+      align-self: flex-start; background: #f0f2f5; color: #111; border-bottom-left-radius: 2px;
+    }
+
+    .msg.agent.thinking { color: #888; font-style: italic; }
+
+    /* ── Input row ── */
+    #input-row {
+      display: flex; padding: 12px 16px; gap: 10px;
+      border-top: 1px solid #e5e7eb; background: #fff; flex-shrink: 0;
+    }
+
+    #input {
+      flex: 1; padding: 10px 14px; border: 1px solid #d1d5db;
+      border-radius: 8px; font-size: 0.92rem; outline: none;
+      resize: none; height: 42px; font-family: inherit;
+    }
+
+    #input:focus { border-color: #0a71b3; }
+
+    #send {
+      padding: 0 20px; background: #007066; color: #fff;
+      border: none; border-radius: 8px; cursor: pointer;
+      font-size: 0.92rem; font-weight: 700; font-family: inherit;
+    }
+
+    #send:disabled { opacity: 0.5; cursor: not-allowed; }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <header id="drag-handle">
+      <img class="cibmtr-logo"
+           src="https://cibmtr.org/Files/Logo.png"
+           alt="CIBMTR" />
+      <div class="header-divider"></div>
+      <div class="header-title">
+        <span>Clinical Genomic Agent</span>
+      </div>
+
+      <!-- Visible only when minimised -->
+      <button id="btn-restore" title="Restore" aria-label="Restore panel">
+        <!-- chat bubble SVG -->
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#007066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+      </button>
+
+      <!-- Normal header controls -->
+      <div class="hdr-btns" id="hdr-btns">
+        <button class="hdr-btn" id="btn-expand" title="Expand to full screen" aria-label="Expand">⛶</button>
+        <button class="hdr-btn" id="btn-minimise" title="Minimise" aria-label="Minimise">─</button>
+      </div>
+    </header>
+
+    <div id="messages"></div>
+
+    <div id="input-row">
+      <textarea id="input" placeholder="Type a message…"></textarea>
+      <button id="send">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const app       = document.getElementById("app");
+    const messages  = document.getElementById("messages");
+    const input     = document.getElementById("input");
+    const sendBtn   = document.getElementById("send");
+    const threadId  = "session-" + Math.random().toString(36).slice(2, 9);
+
+    // ── Saved geometry for restore ──
+    let savedGeom = null;
+
+    // ── Drag ──
+    const handle = document.getElementById("drag-handle");
+    let dragging = false, ox = 0, oy = 0;
+
+    handle.addEventListener("mousedown", e => {
+      if (app.classList.contains("minimised")) return;
+      if (e.target.closest("button")) return;   // don't drag when clicking buttons
+      dragging = true;
+      ox = e.clientX - app.getBoundingClientRect().left;
+      oy = e.clientY - app.getBoundingClientRect().top;
+      app.classList.add("dragging");
+      app.style.right = "auto"; app.style.bottom = "auto";
+    });
+
+    document.addEventListener("mousemove", e => {
+      if (!dragging) return;
+      app.style.left = (e.clientX - ox) + "px";
+      app.style.top  = (e.clientY - oy) + "px";
+    });
+
+    document.addEventListener("mouseup", () => {
+      dragging = false;
+      app.classList.remove("dragging");
+    });
+
+    // ── Minimise ──
+    document.getElementById("btn-minimise").addEventListener("click", e => {
+      e.stopPropagation();
+      const r = app.getBoundingClientRect();
+      savedGeom = { left: r.left, top: r.top, width: r.width, height: r.height };
+      app.style.right = "24px"; app.style.bottom = "24px";
+      app.style.left = ""; app.style.top = "";
+      app.style.width = "56px"; app.style.height = "56px";
+      app.style.minWidth = "56px"; app.style.minHeight = "56px";
+      app.classList.add("minimised");
+    });
+
+    // ── Restore from minimised bubble ──
+    document.getElementById("btn-restore").addEventListener("click", restore);
+    app.addEventListener("click", e => {
+      if (app.classList.contains("minimised")) restore();
+    });
+
+    function restore() {
+      app.classList.remove("minimised");
+      app.style.minWidth = ""; app.style.minHeight = "";
+      if (savedGeom) {
+        app.style.left   = savedGeom.left + "px";
+        app.style.top    = savedGeom.top  + "px";
+        app.style.right  = "auto";
+        app.style.bottom = "auto";
+        app.style.width  = savedGeom.width  + "px";
+        app.style.height = savedGeom.height + "px";
+      } else {
+        app.style.right = "24px"; app.style.bottom = "24px";
+        app.style.left = ""; app.style.top = "";
+        app.style.width = ""; app.style.height = "";
+      }
+    }
+
+    // ── Expand / full-screen toggle ──
+    let expanded = false;
+    document.getElementById("btn-expand").addEventListener("click", () => {
+      if (!expanded) {
+        const r = app.getBoundingClientRect();
+        savedGeom = { left: r.left, top: r.top, width: r.width, height: r.height };
+        app.style.left = "0"; app.style.top = "0";
+        app.style.right = "auto"; app.style.bottom = "auto";
+        app.style.width = "100vw"; app.style.height = "100vh";
+        app.style.borderRadius = "0";
+        document.getElementById("btn-expand").textContent = "⊡";
+        document.getElementById("btn-expand").title = "Restore size";
+        expanded = true;
+      } else {
+        restore();
+        app.style.borderRadius = "";
+        document.getElementById("btn-expand").textContent = "⛶";
+        document.getElementById("btn-expand").title = "Expand to full screen";
+        expanded = false;
+      }
+    });
+
+    // ── Chat logic ──
+    function addMsg(text, role, el) {
+      if (!el) {
+        el = document.createElement("div");
+        el.className = `msg ${role}`;
+        messages.appendChild(el);
+      }
+      el.textContent = text;
+      messages.scrollTop = messages.scrollHeight;
+      return el;
+    }
+
+    async function send() {
+      const text = input.value.trim();
+      if (!text) return;
+      input.value = "";
+      sendBtn.disabled = true;
+      addMsg(text, "user");
+      const agentEl = addMsg("Thinking…", "agent thinking");
+      try {
+        const res = await fetch("/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message: text, thread_id: threadId }),
+        });
+        const reader = res.body.getReader();
+        const decoder = new TextDecoder();
+        let full = "";
+        agentEl.classList.remove("thinking");
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          full += decoder.decode(value, { stream: true });
+          addMsg(full, "agent", agentEl);
+        }
+        if (!full) agentEl.textContent = "(no response)";
+      } catch (e) {
+        agentEl.textContent = "Error: " + e.message;
+        agentEl.classList.remove("thinking");
+      }
+      sendBtn.disabled = false;
+      input.focus();
+    }
+
+    sendBtn.addEventListener("click", send);
+    input.addEventListener("keydown", e => {
+      if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); }
+    });
+
+    async function introduce() {
+      sendBtn.disabled = true;
+      const agentEl = addMsg("Thinking…", "agent thinking");
+      try {
+        const res = await fetch(`/introduce?thread_id=${threadId}`);
+        const reader = res.body.getReader();
+        const decoder = new TextDecoder();
+        let full = "";
+        agentEl.classList.remove("thinking");
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          full += decoder.decode(value, { stream: true });
+          addMsg(full, "agent", agentEl);
+        }
+        if (!full) agentEl.remove();
+      } catch (e) {
+        agentEl.textContent = "Error: " + e.message;
+        agentEl.classList.remove("thinking");
+      }
+      sendBtn.disabled = false;
+      input.focus();
+    }
+
+    introduce();
+  </script>
+</body>
+</html>

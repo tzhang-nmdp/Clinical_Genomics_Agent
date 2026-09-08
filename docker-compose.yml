@@ -1,0 +1,63 @@
+services:
+
+  llama:
+    image: ghcr.io/ggml-org/llama.cpp:server
+    container_name: llama
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./gemma-4-E2B-it-GGUF:/models:ro
+    command: >
+      -m /models/gemma-4-E2B-it-Q4_0.gguf
+      --host 0.0.0.0
+      --port 8080
+      --ctx-size 131072
+      --n-predict -1
+      --cont-batching
+      --cache-type-k q4_0
+      --cache-type-v q4_0
+
+  llama2:
+    image: ghcr.io/ggml-org/llama.cpp:server
+    container_name: llama2
+    restart: unless-stopped
+    ports:
+      - "8081:8081"
+    volumes:
+      - ./gemma-4-E2B-it-GGUF:/models:ro
+    command: >
+      -m /models/gemma-4-E2B-it-Q4_0.gguf
+      --host 0.0.0.0
+      --port 8081
+      --ctx-size 16384
+      --n-predict -1
+      --cont-batching
+      -ngl 99
+      --cache-type-k q4_0
+      --cache-type-v q4_0
+
+  agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: agent
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    depends_on:
+      - llama
+    environment:
+      - LLAMA_SERVER_URL=http://llama:8080/v1
+      - LLAMA2_SERVER_URL=http://llama2:8081/v1
+      - DEVICE=cpu
+      - GENOMIC_DB=/app/tools/genomic_digest_biobert/genomic_knowledge.duckdb
+      - GENOMIC_FAISS=/app/tools/genomic_digest_biobert/faiss_index
+      - GENOMIC_BM25=/app/tools/genomic_digest_biobert/bm25_entities.json
+      - EMBED_MODEL=/app/Sentence-BioBert-snli
+      - EMBED_DEVICE=cpu
+    volumes:
+      - ./MedEmbed-large-v0.1:/app/MedEmbed-large-v0.1:ro
+      - ./medical-faiss-db:/app/medical-faiss-db:ro
+      - ./Sentence-BioBert-snli:/app/Sentence-BioBert-snli:ro
+      - ./logs:/app/logs

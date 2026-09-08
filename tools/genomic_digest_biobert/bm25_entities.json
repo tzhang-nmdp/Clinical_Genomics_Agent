@@ -1,0 +1,1997 @@
+[
+  {
+    "doc_id": "bm25_0d809fdf8dc3b1c5bf59",
+    "entity_type": "Genomic Sequencing Specification",
+    "entity_name": "Chromosome",
+    "text": "Genomic Sequencing Specification | Chromosome | Chrom | The Chromosome number. | Chromosome number",
+    "metadata": {
+      "section": "Genomic sequencing specification"
+    },
+    "tokens": [
+      "genomic",
+      "sequencing",
+      "specification",
+      "chromosome",
+      "chrom",
+      "the",
+      "chromosome",
+      "number.",
+      "chromosome",
+      "number"
+    ]
+  },
+  {
+    "doc_id": "bm25_b9f8d170bddecf479bcf",
+    "entity_type": "Genomic Sequencing Specification",
+    "entity_name": "Chrom",
+    "text": "Genomic Sequencing Specification | Chromosome | Chrom | The Chromosome number. | Chromosome number",
+    "metadata": {
+      "section": "Genomic sequencing specification"
+    },
+    "tokens": [
+      "genomic",
+      "sequencing",
+      "specification",
+      "chromosome",
+      "chrom",
+      "the",
+      "chromosome",
+      "number.",
+      "chromosome",
+      "number"
+    ]
+  },
+  {
+    "doc_id": "bm25_38aca361ea53cec55f78",
+    "entity_type": "Genomic Sequencing Specification",
+    "entity_name": "Position",
+    "text": "Genomic Sequencing Specification | Position | POS | The genomic coordinates. | Genomic coordinates",
+    "metadata": {
+      "section": "Genomic sequencing specification"
+    },
+    "tokens": [
+      "genomic",
+      "sequencing",
+      "specification",
+      "position",
+      "pos",
+      "the",
+      "genomic",
+      "coordinates.",
+      "genomic",
+      "coordinates"
+    ]
+  },
+  {
+    "doc_id": "bm25_ee0b0228e9c3a963fe74",
+    "entity_type": "Genomic Sequencing Specification",
+    "entity_name": "POS",
+    "text": "Genomic Sequencing Specification | Position | POS | The genomic coordinates. | Genomic coordinates",
+    "metadata": {
+      "section": "Genomic sequencing specification"
+    },
+    "tokens": [
+      "genomic",
+      "sequencing",
+      "specification",
+      "position",
+      "pos",
+      "the",
+      "genomic",
+      "coordinates.",
+      "genomic",
+      "coordinates"
+    ]
+  },
+  {
+    "doc_id": "bm25_6f95a40b3681e795fe94",
+    "entity_type": "Genomic Sequencing Specification",
+    "entity_name": "Genotype",
+    "text": "Genomic Sequencing Specification | Genotype | GT | A specific combination of genetic variant alleles at a particular gene locus, such as wild type, heterozygous or homozygous. | GT",
+    "metadata": {
+      "section": "Genomic sequencing specification"
+    },
+    "tokens": [
+      "genomic",
+      "sequencing",
+      "specification",
+      "genotype",
+      "gt",
+      "a",
+      "specific",
+      "combination",
+      "of",
+      "genetic",
+      "variant",
+      "alleles",
+      "at",
+      "a",
+      "particular",
+      "gene",
+      "locus",
+      "such",
+      "as",
+      "wild",
+      "type",
+      "heterozygous",
+      "or",
+      "homozygous.",
+      "gt"
+    ]
+  },
+  {
+    "doc_id": "bm25_bdba3f81a2f7998ac625",
+    "entity_type": "Genomic Sequencing Specification",
+    "entity_name": "GT",
+    "text": "Genomic Sequencing Specification | Genotype | GT | A specific combination of genetic variant alleles at a particular gene locus, such as wild type, heterozygous or homozygous. | GT",
+    "metadata": {
+      "section": "Genomic sequencing specification"
+    },
+    "tokens": [
+      "genomic",
+      "sequencing",
+      "specification",
+      "genotype",
+      "gt",
+      "a",
+      "specific",
+      "combination",
+      "of",
+      "genetic",
+      "variant",
+      "alleles",
+      "at",
+      "a",
+      "particular",
+      "gene",
+      "locus",
+      "such",
+      "as",
+      "wild",
+      "type",
+      "heterozygous",
+      "or",
+      "homozygous.",
+      "gt"
+    ]
+  },
+  {
+    "doc_id": "bm25_fcc1da4155bd73779296",
+    "entity_type": "Genomic Sequencing Specification",
+    "entity_name": "Quality",
+    "text": "Genomic Sequencing Specification | Quality | Qual | The quality scores from the variant calling tool. | Qual",
+    "metadata": {
+      "section": "Genomic sequencing specification"
+    },
+    "tokens": [
+      "genomic",
+      "sequencing",
+      "specification",
+      "quality",
+      "qual",
+      "the",
+      "quality",
+      "scores",
+      "from",
+      "the",
+      "variant",
+      "calling",
+      "tool.",
+      "qual"
+    ]
+  },
+  {
+    "doc_id": "bm25_60b3f68784868cf12bb7",
+    "entity_type": "Genomic Sequencing Specification",
+    "entity_name": "Qual",
+    "text": "Genomic Sequencing Specification | Quality | Qual | The quality scores from the variant calling tool. | Qual",
+    "metadata": {
+      "section": "Genomic sequencing specification"
+    },
+    "tokens": [
+      "genomic",
+      "sequencing",
+      "specification",
+      "quality",
+      "qual",
+      "the",
+      "quality",
+      "scores",
+      "from",
+      "the",
+      "variant",
+      "calling",
+      "tool.",
+      "qual"
+    ]
+  },
+  {
+    "doc_id": "bm25_145b2048c2f0dfcd2fcc",
+    "entity_type": "Genomic Sequencing Specification",
+    "entity_name": "Read depth",
+    "text": "Genomic Sequencing Specification | Read depth | DP | The number of reads at a specific position. | DP",
+    "metadata": {
+      "section": "Genomic sequencing specification"
+    },
+    "tokens": [
+      "genomic",
+      "sequencing",
+      "specification",
+      "read",
+      "depth",
+      "dp",
+      "the",
+      "number",
+      "of",
+      "reads",
+      "at",
+      "a",
+      "specific",
+      "position.",
+      "dp"
+    ]
+  },
+  {
+    "doc_id": "bm25_65f79ca624f4924f949b",
+    "entity_type": "Genomic Sequencing Specification",
+    "entity_name": "DP",
+    "text": "Genomic Sequencing Specification | Read depth | DP | The number of reads at a specific position. | DP",
+    "metadata": {
+      "section": "Genomic sequencing specification"
+    },
+    "tokens": [
+      "genomic",
+      "sequencing",
+      "specification",
+      "read",
+      "depth",
+      "dp",
+      "the",
+      "number",
+      "of",
+      "reads",
+      "at",
+      "a",
+      "specific",
+      "position.",
+      "dp"
+    ]
+  },
+  {
+    "doc_id": "bm25_21a896731fba5ac0e870",
+    "entity_type": "Genomic File Format",
+    "entity_name": "FASTQ",
+    "text": "Genomic File Format | FASTQ | FASTQ | A standard format of text-based file that stores NGS sequences from the clusters that pass filter on a flow cell and their corresponding quality scores. | FASTQ",
+    "metadata": {
+      "section": "Genomic file format"
+    },
+    "tokens": [
+      "genomic",
+      "file",
+      "format",
+      "fastq",
+      "fastq",
+      "a",
+      "standard",
+      "format",
+      "of",
+      "text-based",
+      "file",
+      "that",
+      "stores",
+      "ngs",
+      "sequences",
+      "from",
+      "the",
+      "clusters",
+      "that",
+      "pass",
+      "filter",
+      "on",
+      "a",
+      "flow",
+      "cell",
+      "and",
+      "their",
+      "corresponding",
+      "quality",
+      "scores.",
+      "fastq"
+    ]
+  },
+  {
+    "doc_id": "bm25_ef543760b40b21aaf17b",
+    "entity_type": "Genomic File Format",
+    "entity_name": "SAM",
+    "text": "Genomic File Format | SAM | SAM | A tab-delimited text format consisting of a header section and an alignment section from sequence alignment/map. | SAM",
+    "metadata": {
+      "section": "Genomic file format"
+    },
+    "tokens": [
+      "genomic",
+      "file",
+      "format",
+      "sam",
+      "sam",
+      "a",
+      "tab-delimited",
+      "text",
+      "format",
+      "consisting",
+      "of",
+      "a",
+      "header",
+      "section",
+      "and",
+      "an",
+      "alignment",
+      "section",
+      "from",
+      "sequence",
+      "alignment",
+      "map.",
+      "sam"
+    ]
+  },
+  {
+    "doc_id": "bm25_07a79d7515560f94f081",
+    "entity_type": "Genomic File Format",
+    "entity_name": "BAM",
+    "text": "Genomic File Format | BAM | BAM | A compressed binary version of a SAM file that is used to represent aligned sequences. | BAM",
+    "metadata": {
+      "section": "Genomic file format"
+    },
+    "tokens": [
+      "genomic",
+      "file",
+      "format",
+      "bam",
+      "bam",
+      "a",
+      "compressed",
+      "binary",
+      "version",
+      "of",
+      "a",
+      "sam",
+      "file",
+      "that",
+      "is",
+      "used",
+      "to",
+      "represent",
+      "aligned",
+      "sequences.",
+      "bam"
+    ]
+  },
+  {
+    "doc_id": "bm25_50b8d88ea84387083406",
+    "entity_type": "Genomic File Format",
+    "entity_name": "CRAM",
+    "text": "Genomic File Format | CRAM | CRAM | A highly compressed, reference-based file format for storing DNA sequencing data. | CRAM",
+    "metadata": {
+      "section": "Genomic file format"
+    },
+    "tokens": [
+      "genomic",
+      "file",
+      "format",
+      "cram",
+      "cram",
+      "a",
+      "highly",
+      "compressed",
+      "reference-based",
+      "file",
+      "format",
+      "for",
+      "storing",
+      "dna",
+      "sequencing",
+      "data.",
+      "cram"
+    ]
+  },
+  {
+    "doc_id": "bm25_9836f438d9cd57680ed7",
+    "entity_type": "Genomic File Format",
+    "entity_name": "BED",
+    "text": "Genomic File Format | BED | BED | A text file format used to store genomic regions as coordinates and associated annotations. | BED",
+    "metadata": {
+      "section": "Genomic file format"
+    },
+    "tokens": [
+      "genomic",
+      "file",
+      "format",
+      "bed",
+      "bed",
+      "a",
+      "text",
+      "file",
+      "format",
+      "used",
+      "to",
+      "store",
+      "genomic",
+      "regions",
+      "as",
+      "coordinates",
+      "and",
+      "associated",
+      "annotations.",
+      "bed"
+    ]
+  },
+  {
+    "doc_id": "bm25_12d312deb7bbfbfe40ae",
+    "entity_type": "Genomic File Format",
+    "entity_name": "VCF",
+    "text": "Genomic File Format | VCF | VCF | A text file that stores and reports genomic sequence variations. | VCF",
+    "metadata": {
+      "section": "Genomic file format"
+    },
+    "tokens": [
+      "genomic",
+      "file",
+      "format",
+      "vcf",
+      "vcf",
+      "a",
+      "text",
+      "file",
+      "that",
+      "stores",
+      "and",
+      "reports",
+      "genomic",
+      "sequence",
+      "variations.",
+      "vcf"
+    ]
+  },
+  {
+    "doc_id": "bm25_9318fbc75b14b588eb89",
+    "entity_type": "gene",
+    "entity_name": "TP53",
+    "text": "TP53 | gene | Overall Survival | 494 | Recipient | WGS | Somatic SNVs | nonsynomynous variant+ gene burden test | chr17:7668401-7687550(-)\nTP53 | gene | Overall Survival | 494 | Recipient | WGS | Somatic SNVs | all variant+ sliding window test | chr17:7668401-7687550(-)\nTP53 | gene | Relapse | 94 | Recipient | RRBS | Methylation DMRs | Mann Whitney test (case-control) | N/A\nTP53 | gene | Relapse | 494 | Recipient | WGS | Somatic SNVs | all variant+ sliding window test | chr17:7668401-7687550(-)\nTP53 | gene | Overall Survival | 494 | Recipient | WGS | Somatic SNVs | all variant+ gene burden test | chr17:7668401-7687550(-)",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "tp53",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "nonsynomynous",
+      "variant",
+      "gene",
+      "burden",
+      "test",
+      "chr17:7668401-7687550",
+      "tp53",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "all",
+      "variant",
+      "sliding",
+      "window",
+      "test",
+      "chr17:7668401-7687550",
+      "tp53",
+      "gene",
+      "relapse",
+      "94",
+      "recipient",
+      "rrbs",
+      "methylation",
+      "dmrs",
+      "mann",
+      "whitney",
+      "test",
+      "case-control",
+      "n/a",
+      "tp53",
+      "gene",
+      "relapse",
+      "494",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "all",
+      "variant",
+      "sliding",
+      "window",
+      "test",
+      "chr17:7668401-7687550",
+      "tp53",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "all",
+      "variant",
+      "gene",
+      "burden",
+      "test",
+      "chr17:7668401-7687550"
+    ]
+  },
+  {
+    "doc_id": "bm25_9afa7fc26019232785fe",
+    "entity_type": "gene",
+    "entity_name": "HCN2",
+    "text": "HCN2 | gene | Overall Survival | 494 | Recipient | WGS | Somatic SNVs | nonsynomynous variant+ gene burden test | chr19:589880-617159(+)",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "hcn2",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "nonsynomynous",
+      "variant",
+      "gene",
+      "burden",
+      "test",
+      "chr19:589880-617159"
+    ]
+  },
+  {
+    "doc_id": "bm25_15eb5dcf9b3aea58213c",
+    "entity_type": "gene",
+    "entity_name": "ABCA13",
+    "text": "ABCA13 | gene | Overall Survival | 494 | Recipient | WGS | Somatic SNVs | all variant+ gene burden test | chr7:48171457-48647497(+)\nABCA13 | gene | Overall Survival | 494 | Recipient | WGS | Somatic SNVs | all variant+ sliding window test | chr7:48171457-48647497(+)",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "abca13",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "all",
+      "variant",
+      "gene",
+      "burden",
+      "test",
+      "chr7:48171457-48647497",
+      "abca13",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "all",
+      "variant",
+      "sliding",
+      "window",
+      "test",
+      "chr7:48171457-48647497"
+    ]
+  },
+  {
+    "doc_id": "bm25_28f1f43825171efb5ed2",
+    "entity_type": "gene",
+    "entity_name": "DCAF13P1-RNU6-392P",
+    "text": "DCAF13P1-RNU6-392P | gene | Overall Survival | 494 | Recipient | WGS | Somatic SNVs | all variant+ gene burden test | chr7:106126700-106208167(+)",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "dcaf13p1-rnu6-392p",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "all",
+      "variant",
+      "gene",
+      "burden",
+      "test",
+      "chr7:106126700-106208167"
+    ]
+  },
+  {
+    "doc_id": "bm25_a25a24268cafb39160eb",
+    "entity_type": "gene",
+    "entity_name": "DLX5",
+    "text": "DLX5 | gene | Overall Survival | 494 | Recipient | WGS | Somatic SNVs | all variant+ gene burden test | chr7:97020395-97024831(-)\nDLX5 | gene | Overall Survival | 494 | Recipient | WGS | Somatic SNVs | all variant+ sliding window test | chr7:97020395-97024831(-)",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "dlx5",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "all",
+      "variant",
+      "gene",
+      "burden",
+      "test",
+      "chr7:97020395-97024831",
+      "dlx5",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "all",
+      "variant",
+      "sliding",
+      "window",
+      "test",
+      "chr7:97020395-97024831"
+    ]
+  },
+  {
+    "doc_id": "bm25_2525f94cc9f7cd637c6e",
+    "entity_type": "gene",
+    "entity_name": "EFHC2",
+    "text": "EFHC2 | gene | Overall Survival | 494 | Recipient | WGS | Somatic SNVs | all variant+ gene burden test | chrX:44147871-44343672(-)",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "efhc2",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "all",
+      "variant",
+      "gene",
+      "burden",
+      "test",
+      "chrx:44147871-44343672"
+    ]
+  },
+  {
+    "doc_id": "bm25_b50306b775a3bd02dff0",
+    "entity_type": "gene",
+    "entity_name": "ABI3BP",
+    "text": "ABI3BP | gene | Overall Survival | 494 | Recipient | WGS | Somatic SNVs | all variant+ sliding window test | chr3:100788685-100798639(-)",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "abi3bp",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "all",
+      "variant",
+      "sliding",
+      "window",
+      "test",
+      "chr3:100788685-100798639"
+    ]
+  },
+  {
+    "doc_id": "bm25_d7e57bf57a48dc3f8365",
+    "entity_type": "gene",
+    "entity_name": "ARHGEF7",
+    "text": "ARHGEF7 | gene | Overall Survival | 494 | Recipient | WGS | Somatic SNVs | all variant+ sliding window test | chr13:111120076-111124439(-)",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "arhgef7",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "all",
+      "variant",
+      "sliding",
+      "window",
+      "test",
+      "chr13:111120076-111124439"
+    ]
+  },
+  {
+    "doc_id": "bm25_fdd5ccdeb86ccfef58c1",
+    "entity_type": "gene",
+    "entity_name": "MIR7515",
+    "text": "MIR7515 | gene | Overall Survival | 494 | Recipient | WGS | Somatic SNVs | all variant+ sliding window test | chr2:6648141-6655774(+)",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "mir7515",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "all",
+      "variant",
+      "sliding",
+      "window",
+      "test",
+      "chr2:6648141-6655774"
+    ]
+  },
+  {
+    "doc_id": "bm25_7f23dccf2d276a577ac1",
+    "entity_type": "gene",
+    "entity_name": "RASGRF1",
+    "text": "RASGRF1 | gene | Overall Survival | 494 | Recipient | WGS | Somatic SNVs | all variant+ sliding window test | chr15:78982520-78991522(-)",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "rasgrf1",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "all",
+      "variant",
+      "sliding",
+      "window",
+      "test",
+      "chr15:78982520-78991522"
+    ]
+  },
+  {
+    "doc_id": "bm25_40885d31017c75eaa5f0",
+    "entity_type": "gene",
+    "entity_name": "SLIT3",
+    "text": "SLIT3 | gene | Overall Survival | 494 | Recipient | WGS | Somatic SNVs | all variant+ sliding window test | chr5:168757016-168762458(-)",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "slit3",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "all",
+      "variant",
+      "sliding",
+      "window",
+      "test",
+      "chr5:168757016-168762458"
+    ]
+  },
+  {
+    "doc_id": "bm25_4cb84b7d5cd30aaefc8f",
+    "entity_type": "gene",
+    "entity_name": "SPAG16",
+    "text": "SPAG16 | gene | Overall Survival | 494 | Recipient | WGS | Somatic SNVs | all variant+ sliding window test | chr2:214187490-214187687(+)",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "spag16",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "all",
+      "variant",
+      "sliding",
+      "window",
+      "test",
+      "chr2:214187490-214187687"
+    ]
+  },
+  {
+    "doc_id": "bm25_0566e50b78c7d7d0e613",
+    "entity_type": "gene",
+    "entity_name": "DDX11",
+    "text": "DDX11 | gene | Overall Survival | 301 | Recipient | WGS | Somatic SNVs | nonsynomynous variant + gene burden test | chr12:31073859-31104799(+)",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "ddx11",
+      "gene",
+      "overall",
+      "survival",
+      "301",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "nonsynomynous",
+      "variant",
+      "gene",
+      "burden",
+      "test",
+      "chr12:31073859-31104799"
+    ]
+  },
+  {
+    "doc_id": "bm25_f5f9a0cd615b764ec8c4",
+    "entity_type": "variant",
+    "entity_name": "TP53 + del5q",
+    "text": "TP53 + del5q | variant | Overall Survival | 494 | Recipient | WGS | All SNVs | clustering based test | N/A",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "tp53",
+      "del5q",
+      "variant",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "all",
+      "snvs",
+      "clustering",
+      "based",
+      "test",
+      "n/a"
+    ]
+  },
+  {
+    "doc_id": "bm25_1cfbd7ce7e7969073e14",
+    "entity_type": "variant",
+    "entity_name": "cluster (common variants)",
+    "text": "cluster (common variants) | variant | Overall Survival | 494 | Recipient | WGS | All SNVs | clustering based test | N/A",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "cluster",
+      "common",
+      "variants",
+      "variant",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "all",
+      "snvs",
+      "clustering",
+      "based",
+      "test",
+      "n/a"
+    ]
+  },
+  {
+    "doc_id": "bm25_cd3231d07e7fdd742c80",
+    "entity_type": "variant",
+    "entity_name": "cluster (rare variants)",
+    "text": "cluster (rare variants) | variant | Overall Survival | 494 | Recipient | WGS | All SNVs | clustering based test | N/A",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "cluster",
+      "rare",
+      "variants",
+      "variant",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "all",
+      "snvs",
+      "clustering",
+      "based",
+      "test",
+      "n/a"
+    ]
+  },
+  {
+    "doc_id": "bm25_e67360f0def234b8e119",
+    "entity_type": "gene",
+    "entity_name": "MT-CYB",
+    "text": "MT-CYB | gene | Overall Survival | 494 | Recipient | WGS | Mitochondrial SNVs | all variant+ gene burden test | chrM:14747-15887(+)",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "mt-cyb",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "mitochondrial",
+      "snvs",
+      "all",
+      "variant",
+      "gene",
+      "burden",
+      "test",
+      "chrm:14747-15887"
+    ]
+  },
+  {
+    "doc_id": "bm25_a0a800ed907bfd06b3ad",
+    "entity_type": "gene",
+    "entity_name": "MT-ND2",
+    "text": "MT-ND2 | gene | Overall Survival | 494 | Recipient | WGS | Mitochondrial SNVs | all variant+ gene burden test | chrM:4470-5511(+)",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "mt-nd2",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "mitochondrial",
+      "snvs",
+      "all",
+      "variant",
+      "gene",
+      "burden",
+      "test",
+      "chrm:4470-5511"
+    ]
+  },
+  {
+    "doc_id": "bm25_3aca20d93ebbf943de40",
+    "entity_type": "gene",
+    "entity_name": "MT-ND4",
+    "text": "MT-ND4 | gene | Overall Survival | 494 | Recipient | WGS | Mitochondrial SNVs | all variant+ gene burden test | chrM:10760-12137(+)",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "mt-nd4",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "mitochondrial",
+      "snvs",
+      "all",
+      "variant",
+      "gene",
+      "burden",
+      "test",
+      "chrm:10760-12137"
+    ]
+  },
+  {
+    "doc_id": "bm25_88eeeb20e990d1485204",
+    "entity_type": "variant",
+    "entity_name": "rs111224634 (TRBV6)",
+    "text": "rs111224634 (TRBV6) | variant | Overall Survival | 494 | Donor | WGS | Germline SNVs | common variant + variant level association test | chr7:142508964",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "rs111224634",
+      "trbv6",
+      "variant",
+      "overall",
+      "survival",
+      "494",
+      "donor",
+      "wgs",
+      "germline",
+      "snvs",
+      "common",
+      "variant",
+      "variant",
+      "level",
+      "association",
+      "test",
+      "chr7:142508964"
+    ]
+  },
+  {
+    "doc_id": "bm25_c02cff9ea06ca94c12dc",
+    "entity_type": "pathway",
+    "entity_name": "Complement pathway",
+    "text": "Complement pathway | pathway | Relapse | 94 | Recipient | Somalogic | Plasma protein | GSEA test (case-control) | N/A\nComplement pathway | pathway | Relapse | 94 | Recipient | Somalogic | Plasma protein | GSEA test  (case-control)",
+    "metadata": {
+      "outcome": "Relapse"
+    },
+    "tokens": [
+      "complement",
+      "pathway",
+      "pathway",
+      "relapse",
+      "94",
+      "recipient",
+      "somalogic",
+      "plasma",
+      "protein",
+      "gsea",
+      "test",
+      "case-control",
+      "n/a",
+      "complement",
+      "pathway",
+      "pathway",
+      "relapse",
+      "94",
+      "recipient",
+      "somalogic",
+      "plasma",
+      "protein",
+      "gsea",
+      "test",
+      "case-control"
+    ]
+  },
+  {
+    "doc_id": "bm25_18c0d7e5f8eb6de5d99d",
+    "entity_type": "pathway",
+    "entity_name": "Allograft rejection pathway",
+    "text": "Allograft rejection pathway | pathway | Relapse | 94 | Recipient | Somalogic | Plasma protein | GSEA test (case-control) | N/A\nAllograft rejection pathway | pathway | Relapse | 94 | Recipient | Somalogic | Plasma protein | GSEA test  (case-control)",
+    "metadata": {
+      "outcome": "Relapse"
+    },
+    "tokens": [
+      "allograft",
+      "rejection",
+      "pathway",
+      "pathway",
+      "relapse",
+      "94",
+      "recipient",
+      "somalogic",
+      "plasma",
+      "protein",
+      "gsea",
+      "test",
+      "case-control",
+      "n/a",
+      "allograft",
+      "rejection",
+      "pathway",
+      "pathway",
+      "relapse",
+      "94",
+      "recipient",
+      "somalogic",
+      "plasma",
+      "protein",
+      "gsea",
+      "test",
+      "case-control"
+    ]
+  },
+  {
+    "doc_id": "bm25_474fe7f0e4a133ba8e90",
+    "entity_type": "gene",
+    "entity_name": "HNRNPA3",
+    "text": "HNRNPA3 | gene | Relapse | 494 | Recipient | WGS | Somatic SNVs | all variant+ sliding window test | chr2:177212794-177223959(+)",
+    "metadata": {
+      "outcome": "Relapse"
+    },
+    "tokens": [
+      "hnrnpa3",
+      "gene",
+      "relapse",
+      "494",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "all",
+      "variant",
+      "sliding",
+      "window",
+      "test",
+      "chr2:177212794-177223959"
+    ]
+  },
+  {
+    "doc_id": "bm25_65645d3d62b9005ff2a5",
+    "entity_type": "gene",
+    "entity_name": "TENM2",
+    "text": "TENM2 | gene | Relapse | 494 | Recipient | WGS | Somatic SNVs | all variant+ sliding window test | chr5:166979029-168264157(+)",
+    "metadata": {
+      "outcome": "Relapse"
+    },
+    "tokens": [
+      "tenm2",
+      "gene",
+      "relapse",
+      "494",
+      "recipient",
+      "wgs",
+      "somatic",
+      "snvs",
+      "all",
+      "variant",
+      "sliding",
+      "window",
+      "test",
+      "chr5:166979029-168264157"
+    ]
+  },
+  {
+    "doc_id": "bm25_19ea1563f4cf01b9a6d3",
+    "entity_type": "gene",
+    "entity_name": "HSPC324",
+    "text": "HSPC324 | gene | Relapse | 494 | Recipient | WGS | Germline SNVs | rare variant+ gene burden test | chr9:136648610-136660421(-)",
+    "metadata": {
+      "outcome": "Relapse"
+    },
+    "tokens": [
+      "hspc324",
+      "gene",
+      "relapse",
+      "494",
+      "recipient",
+      "wgs",
+      "germline",
+      "snvs",
+      "rare",
+      "variant",
+      "gene",
+      "burden",
+      "test",
+      "chr9:136648610-136660421"
+    ]
+  },
+  {
+    "doc_id": "bm25_fa06633c7436c8d5e354",
+    "entity_type": "variant",
+    "entity_name": "chr12:16758807:T:TA (ENSG00000283240)",
+    "text": "chr12:16758807:T:TA (ENSG00000283240) | variant | Relapse | 494 | Recipient | WGS | Germline SNVs | common variant+ variant level association test | chr12:16758807",
+    "metadata": {
+      "outcome": "Relapse"
+    },
+    "tokens": [
+      "chr12:16758807:t",
+      "ta",
+      "ensg00000283240",
+      "variant",
+      "relapse",
+      "494",
+      "recipient",
+      "wgs",
+      "germline",
+      "snvs",
+      "common",
+      "variant",
+      "variant",
+      "level",
+      "association",
+      "test",
+      "chr12:16758807"
+    ]
+  },
+  {
+    "doc_id": "bm25_0e16897a28b66f58afb0",
+    "entity_type": "variant",
+    "entity_name": "chr22:15882060:CA:C (NBEAP3)",
+    "text": "chr22:15882060:CA:C (NBEAP3) | variant | Relapse | 494 | Recipient | WGS | Germline SNVs | common variant+ variant level association test | chr22:15882060",
+    "metadata": {
+      "outcome": "Relapse"
+    },
+    "tokens": [
+      "chr22:15882060:ca",
+      "c",
+      "nbeap3",
+      "variant",
+      "relapse",
+      "494",
+      "recipient",
+      "wgs",
+      "germline",
+      "snvs",
+      "common",
+      "variant",
+      "variant",
+      "level",
+      "association",
+      "test",
+      "chr22:15882060"
+    ]
+  },
+  {
+    "doc_id": "bm25_a6765cdc7b48629f2efd",
+    "entity_type": "variant",
+    "entity_name": "rs75650711 (NEPRO-AS1)",
+    "text": "rs75650711 (NEPRO-AS1) | variant | Relapse | 494 | Recipient | WGS | Germline SNVs | common variant+ variant level association test | chr3:113022651",
+    "metadata": {
+      "outcome": "Relapse"
+    },
+    "tokens": [
+      "rs75650711",
+      "nepro-as1",
+      "variant",
+      "relapse",
+      "494",
+      "recipient",
+      "wgs",
+      "germline",
+      "snvs",
+      "common",
+      "variant",
+      "variant",
+      "level",
+      "association",
+      "test",
+      "chr3:113022651"
+    ]
+  },
+  {
+    "doc_id": "bm25_f253fe6a023c881c30b9",
+    "entity_type": "variant",
+    "entity_name": "rs78524564 (P2RY1-HMGN2P13)",
+    "text": "rs78524564 (P2RY1-HMGN2P13) | variant | Relapse | 494 | Recipient | WGS | Germline SNVs | common variant+ variant level association test | chr3:153012756",
+    "metadata": {
+      "outcome": "Relapse"
+    },
+    "tokens": [
+      "rs78524564",
+      "p2ry1-hmgn2p13",
+      "variant",
+      "relapse",
+      "494",
+      "recipient",
+      "wgs",
+      "germline",
+      "snvs",
+      "common",
+      "variant",
+      "variant",
+      "level",
+      "association",
+      "test",
+      "chr3:153012756"
+    ]
+  },
+  {
+    "doc_id": "bm25_44a26ae526a543643eb2",
+    "entity_type": "variant",
+    "entity_name": "rs1395271248 (HCN1-EMB)",
+    "text": "rs1395271248 (HCN1-EMB) | variant | Relapse | 494 | Recipient | WGS | Germline SNVs | common variant+ variant level association test | chr5:47052329",
+    "metadata": {
+      "outcome": "Relapse"
+    },
+    "tokens": [
+      "rs1395271248",
+      "hcn1-emb",
+      "variant",
+      "relapse",
+      "494",
+      "recipient",
+      "wgs",
+      "germline",
+      "snvs",
+      "common",
+      "variant",
+      "variant",
+      "level",
+      "association",
+      "test",
+      "chr5:47052329"
+    ]
+  },
+  {
+    "doc_id": "bm25_7eede67f023bcde202c9",
+    "entity_type": "variant",
+    "entity_name": "rs379064 (POM121)",
+    "text": "rs379064 (POM121) | variant | Relapse | 494 | Recipient | WGS | Germline SNVs | common variant+ variant level association test | chr7:72945543",
+    "metadata": {
+      "outcome": "Relapse"
+    },
+    "tokens": [
+      "rs379064",
+      "pom121",
+      "variant",
+      "relapse",
+      "494",
+      "recipient",
+      "wgs",
+      "germline",
+      "snvs",
+      "common",
+      "variant",
+      "variant",
+      "level",
+      "association",
+      "test",
+      "chr7:72945543"
+    ]
+  },
+  {
+    "doc_id": "bm25_dae8e99c777272adfa56",
+    "entity_type": "structural_variant",
+    "entity_name": "chr9:64632801-64636400:<DEL>",
+    "text": "chr9:64632801-64636400:<DEL> | structural_variant | Relapse | 494 | Recipient | WGS | Structural variants | variant level association test | chr9:64632801-64636400",
+    "metadata": {
+      "outcome": "Relapse"
+    },
+    "tokens": [
+      "chr9:64632801-64636400:<del>",
+      "structural",
+      "variant",
+      "relapse",
+      "494",
+      "recipient",
+      "wgs",
+      "structural",
+      "variants",
+      "variant",
+      "level",
+      "association",
+      "test",
+      "chr9:64632801-64636400"
+    ]
+  },
+  {
+    "doc_id": "bm25_ac76f360ee9481a2983a",
+    "entity_type": "gene",
+    "entity_name": "TP53 + del5q",
+    "text": "TP53 + del5q | gene | Overall Survival | 494 | Recipient | WGS | All SNVs | clustering based test",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "tp53",
+      "del5q",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "all",
+      "snvs",
+      "clustering",
+      "based",
+      "test"
+    ]
+  },
+  {
+    "doc_id": "bm25_5634be3448427a639ddb",
+    "entity_type": "gene",
+    "entity_name": "cluster (common variants)",
+    "text": "cluster (common variants) | gene | Overall Survival | 494 | Recipient | WGS | All SNVs | clustering based test",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "cluster",
+      "common",
+      "variants",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "all",
+      "snvs",
+      "clustering",
+      "based",
+      "test"
+    ]
+  },
+  {
+    "doc_id": "bm25_35572b50c662936d646b",
+    "entity_type": "gene",
+    "entity_name": "cluster (rare variants)",
+    "text": "cluster (rare variants) | gene | Overall Survival | 494 | Recipient | WGS | All SNVs | clustering based test",
+    "metadata": {
+      "outcome": "Overall Survival"
+    },
+    "tokens": [
+      "cluster",
+      "rare",
+      "variants",
+      "gene",
+      "overall",
+      "survival",
+      "494",
+      "recipient",
+      "wgs",
+      "all",
+      "snvs",
+      "clustering",
+      "based",
+      "test"
+    ]
+  },
+  {
+    "doc_id": "bm25_49168d4a8936967e88d4",
+    "entity_type": "link",
+    "entity_name": "WGS data reference",
+    "text": "WGS data reference | https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.26/ | Reference Genome",
+    "metadata": {
+      "url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.26/"
+    },
+    "tokens": [
+      "wgs",
+      "data",
+      "reference",
+      "https",
+      "www.ncbi.nlm.nih.gov",
+      "datasets",
+      "genome",
+      "gcf",
+      "000001405.26",
+      "reference",
+      "genome"
+    ]
+  },
+  {
+    "doc_id": "bm25_553b21801484ce8bad3c",
+    "entity_type": "link",
+    "entity_name": "GRCh38/HG38 download",
+    "text": "GRCh38/HG38 download | https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/ | Reference Genome",
+    "metadata": {
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/"
+    },
+    "tokens": [
+      "grch38",
+      "hg38",
+      "download",
+      "https",
+      "hgdownload.soe.ucsc.e",
+      "du",
+      "goldenpath",
+      "hg38",
+      "bigzips",
+      "reference",
+      "genome"
+    ]
+  },
+  {
+    "doc_id": "bm25_3f2d445777d9d21e3e66",
+    "entity_type": "link",
+    "entity_name": "Germline SNV tool",
+    "text": "Germline SNV tool | https://github.com/broadinstitute/gatk | Variant Calling Tool",
+    "metadata": {
+      "url": "https://github.com/broadinstitute/gatk"
+    },
+    "tokens": [
+      "germline",
+      "snv",
+      "tool",
+      "https",
+      "github.com",
+      "broadinstitute",
+      "gatk",
+      "variant",
+      "calling",
+      "tool"
+    ]
+  },
+  {
+    "doc_id": "bm25_9758b883344b0d166882",
+    "entity_type": "link",
+    "entity_name": "Somatic SNV tool",
+    "text": "Somatic SNV tool | https://github.com/NCI-GDC/mutect2-cwl | Variant Calling Tool",
+    "metadata": {
+      "url": "https://github.com/NCI-GDC/mutect2-cwl"
+    },
+    "tokens": [
+      "somatic",
+      "snv",
+      "tool",
+      "https",
+      "github.com",
+      "nci-gdc",
+      "mutect2-cwl",
+      "variant",
+      "calling",
+      "tool"
+    ]
+  },
+  {
+    "doc_id": "bm25_e143d619897e23414b04",
+    "entity_type": "link",
+    "entity_name": "Structural variant tool",
+    "text": "Structural variant tool | https://github.com/fritzsedlazeck/parliament2 | Variant Calling Tool",
+    "metadata": {
+      "url": "https://github.com/fritzsedlazeck/parliament2"
+    },
+    "tokens": [
+      "structural",
+      "variant",
+      "tool",
+      "https",
+      "github.com",
+      "fritzsedlazeck",
+      "parliament2",
+      "variant",
+      "calling",
+      "tool"
+    ]
+  },
+  {
+    "doc_id": "bm25_746d991156e0d5c0875b",
+    "entity_type": "link",
+    "entity_name": "Variant annotation tool",
+    "text": "Variant annotation tool | https://pcingola.github.io/SnpEff/ | Variant Annotation Tool\nVariant annotation tool | https://annovar.openbioinformatics.org/en/latest/ | Variant Annotation Tool",
+    "metadata": {
+      "url": "https://pcingola.github.io/SnpEff/"
+    },
+    "tokens": [
+      "variant",
+      "annotation",
+      "tool",
+      "https",
+      "pcingola.github.io",
+      "snpeff",
+      "variant",
+      "annotation",
+      "tool",
+      "variant",
+      "annotation",
+      "tool",
+      "https",
+      "annovar.openbioinform",
+      "atics.org",
+      "en",
+      "latest",
+      "variant",
+      "annotation",
+      "tool"
+    ]
+  },
+  {
+    "doc_id": "bm25_e8597efa1d163f5c4c4b",
+    "entity_type": "link",
+    "entity_name": "PDF_FASTQ.pdf",
+    "text": "PDF_FASTQ.pdf | http://gorgonzola.cshl.edu/pfb/2011/public/ohofmann/Papers/PDF_FASTQ.pdf | external",
+    "metadata": {
+      "url": "http://gorgonzola.cshl.edu/pfb/2011/public/ohofmann/Papers/PDF_FASTQ.pdf"
+    },
+    "tokens": [
+      "pdf",
+      "fastq.pdf",
+      "http",
+      "gorgonzola.cshl.edu",
+      "pfb",
+      "2011/public/ohofmann/papers/pdf_fastq.pdf",
+      "external"
+    ]
+  },
+  {
+    "doc_id": "bm25_7735ddcd53903fc58c56",
+    "entity_type": "link",
+    "entity_name": "SAMv1.pdf",
+    "text": "SAMv1.pdf | https://samtools.github.io/hts-specs/SAMv1.pdf | external",
+    "metadata": {
+      "url": "https://samtools.github.io/hts-specs/SAMv1.pdf"
+    },
+    "tokens": [
+      "samv1.pdf",
+      "https",
+      "samtools.github.io",
+      "hts-specs",
+      "samv1.pdf",
+      "external"
+    ]
+  },
+  {
+    "doc_id": "bm25_e3233cb8a7e090248286",
+    "entity_type": "link",
+    "entity_name": "BEDv1.pdf",
+    "text": "BEDv1.pdf | https://samtools.github.io/hts-specs/BEDv1.pdf | external",
+    "metadata": {
+      "url": "https://samtools.github.io/hts-specs/BEDv1.pdf"
+    },
+    "tokens": [
+      "bedv1.pdf",
+      "https",
+      "samtools.github.io",
+      "hts-specs",
+      "bedv1.pdf",
+      "external"
+    ]
+  },
+  {
+    "doc_id": "bm25_7d6d8db8ca11e3097b1c",
+    "entity_type": "link",
+    "entity_name": "VCFv4.2.pdf",
+    "text": "VCFv4.2.pdf | https://samtools.github.io/hts-specs/VCFv4.2.pdf | external",
+    "metadata": {
+      "url": "https://samtools.github.io/hts-specs/VCFv4.2.pdf"
+    },
+    "tokens": [
+      "vcfv4.2.pdf",
+      "https",
+      "samtools.github.io",
+      "hts-specs",
+      "vcfv4.2.pdf",
+      "external"
+    ]
+  },
+  {
+    "doc_id": "bm25_97dc048c7148df42ae18",
+    "entity_type": "link",
+    "entity_name": "dna",
+    "text": "dna | https://ftp.ensembl.org/pub/release-113/fasta/homo_sapiens/dna/ | external",
+    "metadata": {
+      "url": "https://ftp.ensembl.org/pub/release-113/fasta/homo_sapiens/dna/"
+    },
+    "tokens": [
+      "dna",
+      "https",
+      "ftp.ensembl.org",
+      "pub",
+      "release-113",
+      "fasta",
+      "homo",
+      "sapiens",
+      "dna",
+      "external"
+    ]
+  },
+  {
+    "doc_id": "bm25_ebf3e6ef4ae858fbd9d2",
+    "entity_type": "link",
+    "entity_name": "octopus",
+    "text": "octopus | https://github.com/luntergroup/octopus | github",
+    "metadata": {
+      "url": "https://github.com/luntergroup/octopus"
+    },
+    "tokens": [
+      "octopus",
+      "https",
+      "github.com",
+      "luntergroup",
+      "octopus",
+      "github"
+    ]
+  },
+  {
+    "doc_id": "bm25_cf8362e67c1455340ded",
+    "entity_type": "link",
+    "entity_name": "docker-basespace_chromoseq",
+    "text": "docker-basespace_chromoseq | https://github.com/genome/docker-basespace_chromoseq | github",
+    "metadata": {
+      "url": "https://github.com/genome/docker-basespace_chromoseq"
+    },
+    "tokens": [
+      "docker-basespace",
+      "chromoseq",
+      "https",
+      "github.com",
+      "genome",
+      "docker-basespace",
+      "chromoseq",
+      "github"
+    ]
+  },
+  {
+    "doc_id": "bm25_5567a3f44126a0769d12",
+    "entity_type": "link",
+    "entity_name": "index.html",
+    "text": "index.html | https://useast.ensembl.org/info/docs/tools/vep/index.html | external",
+    "metadata": {
+      "url": "https://useast.ensembl.org/info/docs/tools/vep/index.html"
+    },
+    "tokens": [
+      "index.html",
+      "https",
+      "useast.ensembl.org",
+      "info",
+      "docs",
+      "tools",
+      "vep",
+      "index.html",
+      "external"
+    ]
+  },
+  {
+    "doc_id": "bm25_808de89fdb7f103121f1",
+    "entity_type": "link",
+    "entity_name": "CIBMTR_SOP_WGS_PROCESS_PIPELINE_v1.docx",
+    "text": "CIBMTR_SOP_WGS_PROCESS_PIPELINE_v1.docx | https://confluence.nmdp.org/download/attachments/192021193/CIBMTR_SOP_WGS_PROCESS_PIPELINE_v1.docx?version=1&modificationDate=1620405506943&api=v2 | confluence",
+    "metadata": {
+      "url": "https://confluence.nmdp.org/download/attachments/192021193/CIBMTR_SOP_WGS_PROCESS_PIPELINE_v1.docx?version=1&modificationDate=1620405506943&api=v2"
+    },
+    "tokens": [
+      "cibmtr",
+      "sop",
+      "wgs",
+      "process",
+      "pipeline",
+      "v1.docx",
+      "https",
+      "confluence.nmdp.org",
+      "download",
+      "attachments",
+      "192021193/cibmtr_sop_wgs_process_pipeline_v1.docx",
+      "version",
+      "1",
+      "modificationdate",
+      "1620405506943",
+      "api",
+      "v2",
+      "confluence"
+    ]
+  },
+  {
+    "doc_id": "bm25_690a8f99e0812df6a313",
+    "entity_type": "link",
+    "entity_name": "CIBMTR_SOP_WGS_ANALYTIC_PIPELINE.docx",
+    "text": "CIBMTR_SOP_WGS_ANALYTIC_PIPELINE.docx | https://confluence.nmdp.org/download/attachments/192021193/CIBMTR_SOP_WGS_ANALYTIC_PIPELINE.docx?version=1&modificationDate=1620405505540&api=v2 | confluence",
+    "metadata": {
+      "url": "https://confluence.nmdp.org/download/attachments/192021193/CIBMTR_SOP_WGS_ANALYTIC_PIPELINE.docx?version=1&modificationDate=1620405505540&api=v2"
+    },
+    "tokens": [
+      "cibmtr",
+      "sop",
+      "wgs",
+      "analytic",
+      "pipeline.docx",
+      "https",
+      "confluence.nmdp.org",
+      "download",
+      "attachments",
+      "192021193/cibmtr_sop_wgs_analytic_pipeline.docx",
+      "version",
+      "1",
+      "modificationdate",
+      "1620405505540",
+      "api",
+      "v2",
+      "confluence"
+    ]
+  },
+  {
+    "doc_id": "bm25_04c09220bbf8ecedcf6b",
+    "entity_type": "link",
+    "entity_name": "Supervised+Clustering+of+WGS_Data+for+Post-HCT+Survival+Outcome+Modeling",
+    "text": "Supervised+Clustering+of+WGS_Data+for+Post-HCT+Survival+Outcome+Modeling | https://confluence.nmdp.org/display/BIO/Supervised+Clustering+of+WGS_Data+for+Post-HCT+Survival+Outcome+Modeling | confluence",
+    "metadata": {
+      "url": "https://confluence.nmdp.org/display/BIO/Supervised+Clustering+of+WGS_Data+for+Post-HCT+Survival+Outcome+Modeling"
+    },
+    "tokens": [
+      "supervised",
+      "clustering",
+      "of",
+      "wgs",
+      "data",
+      "for",
+      "post-hct",
+      "survival",
+      "outcome",
+      "modeling",
+      "https",
+      "confluence.nmdp.org",
+      "display",
+      "bio",
+      "supervised",
+      "clustering",
+      "of",
+      "wgs",
+      "data",
+      "for",
+      "post-hct",
+      "survival",
+      "outcome",
+      "modeling",
+      "confluence"
+    ]
+  },
+  {
+    "doc_id": "bm25_285f3d1ed1c08c7da9d2",
+    "entity_type": "link",
+    "entity_name": "viewpage.action",
+    "text": "viewpage.action | https://confluence.nmdp.org/pages/viewpage.action?pageId=192021104 | confluence\nviewpage.action | https://confluence.nmdp.org/pages/viewpage.action?spaceKey=BIO&title=Data+Types+on+GDR | confluence",
+    "metadata": {
+      "url": "https://confluence.nmdp.org/pages/viewpage.action?pageId=192021104"
+    },
+    "tokens": [
+      "viewpage.action",
+      "https",
+      "confluence.nmdp.org",
+      "pages",
+      "viewpage.action",
+      "pageid",
+      "192021104",
+      "confluence",
+      "viewpage.action",
+      "https",
+      "confluence.nmdp.org",
+      "pages",
+      "viewpage.action",
+      "spacekey",
+      "bio",
+      "title",
+      "data",
+      "types",
+      "on",
+      "gdr",
+      "confluence"
+    ]
+  },
+  {
+    "doc_id": "bm25_7b49a6b3a5e02be15f78",
+    "entity_type": "link",
+    "entity_name": "CYTO-SV-ML+pipeline+for+cytogenetic+structural+variation+classification+using+WGS+data",
+    "text": "CYTO-SV-ML+pipeline+for+cytogenetic+structural+variation+classification+using+WGS+data | https://confluence.nmdp.org/display/BIO/CYTO-SV-ML+pipeline+for+cytogenetic+structural+variation+classification+using+WGS+data | confluence",
+    "metadata": {
+      "url": "https://confluence.nmdp.org/display/BIO/CYTO-SV-ML+pipeline+for+cytogenetic+structural+variation+classification+using+WGS+data"
+    },
+    "tokens": [
+      "cyto-sv-ml",
+      "pipeline",
+      "for",
+      "cytogenetic",
+      "structural",
+      "variation",
+      "classification",
+      "using",
+      "wgs",
+      "data",
+      "https",
+      "confluence.nmdp.org",
+      "display",
+      "bio",
+      "cyto-sv-ml",
+      "pipeline",
+      "for",
+      "cytogenetic",
+      "structural",
+      "variation",
+      "classification",
+      "using",
+      "wgs",
+      "data",
+      "confluence"
+    ]
+  },
+  {
+    "doc_id": "bm25_178b8c509c2f9ab1299f",
+    "entity_type": "link",
+    "entity_name": "sv-qc-analysis-pipeline",
+    "text": "sv-qc-analysis-pipeline | https://github.com/nmdp-bioinformatics/sv-qc-analysis-pipeline | github",
+    "metadata": {
+      "url": "https://github.com/nmdp-bioinformatics/sv-qc-analysis-pipeline"
+    },
+    "tokens": [
+      "sv-qc-analysis-pipeli",
+      "ne",
+      "https",
+      "github.com",
+      "nmdp-bioinformatics",
+      "sv-qc-analysis-pipeli",
+      "ne",
+      "github"
+    ]
+  },
+  {
+    "doc_id": "bm25_96ac459a3bd3b87f9db4",
+    "entity_type": "link",
+    "entity_name": "CYTO-SV-ML",
+    "text": "CYTO-SV-ML | https://github.com/tzhang-nmdp/CYTO-SV-ML | github",
+    "metadata": {
+      "url": "https://github.com/tzhang-nmdp/CYTO-SV-ML"
+    },
+    "tokens": [
+      "cyto-sv-ml",
+      "https",
+      "github.com",
+      "tzhang-nmdp",
+      "cyto-sv-ml",
+      "github"
+    ]
+  },
+  {
+    "doc_id": "bm25_a8071a921e398eb7c5d4",
+    "entity_type": "link",
+    "entity_name": "WGS_annotation_pipeline",
+    "text": "WGS_annotation_pipeline | https://github.com/tzhang-nmdp/WGS_annotation_pipeline | github",
+    "metadata": {
+      "url": "https://github.com/tzhang-nmdp/WGS_annotation_pipeline"
+    },
+    "tokens": [
+      "wgs",
+      "annotation",
+      "pipeline",
+      "https",
+      "github.com",
+      "tzhang-nmdp",
+      "wgs",
+      "annotation",
+      "pipeline",
+      "github"
+    ]
+  },
+  {
+    "doc_id": "bm25_c60432515819d26a9cf7",
+    "entity_type": "link",
+    "entity_name": "WGS_ANALYTIC_PIPELINE",
+    "text": "WGS_ANALYTIC_PIPELINE | https://github.com/tzhang-nmdp/WGS_ANALYTIC_PIPELINE | github",
+    "metadata": {
+      "url": "https://github.com/tzhang-nmdp/WGS_ANALYTIC_PIPELINE"
+    },
+    "tokens": [
+      "wgs",
+      "analytic",
+      "pipeline",
+      "https",
+      "github.com",
+      "tzhang-nmdp",
+      "wgs",
+      "analytic",
+      "pipeline",
+      "github"
+    ]
+  }
+]

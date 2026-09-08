@@ -1,0 +1,39 @@
+# FastAPI server
+fastapi
+uvicorn[standard]
+httpx
+pydantic
+
+# LangChain ecosystem
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-huggingface
+langchain-mcp-adapters
+langchain-text-splitters
+langchain-ollama
+langgraph
+
+# LangChain OpenTutorial helper
+langchain-opentutorial
+
+# Embeddings & retrieval
+sentence-transformers
+faiss-cpu
+rank-bm25
+bm25s
+
+# PDF loading
+pymupdf
+
+# Data / DB
+duckdb
+pandas
+numpy
+
+# MCP
+mcp
+
+# Misc
+click

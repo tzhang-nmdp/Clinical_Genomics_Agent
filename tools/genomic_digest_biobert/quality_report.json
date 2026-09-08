@@ -1,0 +1,16 @@
+{
+  "pages": 5,
+  "pdf_tables_detected": 3,
+  "sql_rows": {
+    "facts": 11,
+    "cohorts": 2,
+    "study_results": 44
+  },
+  "bm25_entities": 74,
+  "vector_documents": 18,
+  "study_results_with_coordinates": 38,
+  "warnings": [
+    "The 80/10/10 split is semantic routing, not an exact row or byte percentage.",
+    "LLM extraction must not be treated as authoritative without source-page validation."
+  ]
+}

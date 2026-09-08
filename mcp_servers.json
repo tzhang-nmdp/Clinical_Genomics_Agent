@@ -1,0 +1,66 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PAT}"
+      },
+      "transport": "stdio"
+    },
+    "weather": {
+    "command": "uv",
+    "args": [
+        "--directory",
+        "C:\\Users\\tzhang\\Desktop\\Project\\DP-AI\\LangChain-OpenTutorial-main\\mcp_servers",
+        "run",
+        "weather_mcp_server.py"
+        ],
+    "transport": "stdio"
+    },
+
+    "geocoding": {
+    "command": "python",
+    "args": ["-m", "geocode_mcp.server"],
+    "env": {
+        "PYTHONPATH": "C:\\Users\\tzhang\\Desktop\\Project\\DP-AI\\LangChain-OpenTutorial-main\\geocode-mcp\\src"
+    },
+    "transport": "stdio"
+    },
+    "searxng-http": {
+      "type": "streamable-http",
+      "url": "http://localhost:3000/mcp",
+      "env": {
+        "SEARXNG_URL": "${SEARXNG_URL}"
+      }
+    },
+        "ydc-server": {
+      "type": "http",
+      "url": "https://api.you.com/mcp",
+      "headers": {
+        "Authorization": "Bearer <${youApiKey}>"
+      }
+    },
+        "tavily-remote-mcp": {
+      "command": "npx -y mcp-remote https://mcp.tavily.com/mcp/?tavilyApiKey=<your-api-key>",
+      "env": {"tavilyApiKey": "${tavilyApiKey}"}
+    },
+    "google-search": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "C:\\Users\\tzhang\\Desktop\\Project\\DP-AI\\LangChain-OpenTutorial-main\\mcp_servers",
+        "run",
+        "google_search_mcp_server.py"
+      ],
+      "env": {
+        "GOOGLE_API_KEY": "${GOOGLE_API_KEY}",
+        "GOOGLE_SEARCH_ENGINE_ID": "${GOOGLE_SEARCH_ENGINE_ID}"
+      },
+      "transport": "stdio"
+    }
+  }
+}

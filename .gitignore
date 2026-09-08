@@ -1,0 +1,6 @@
+logs/
+api_key.json
+__pycache__/
+*.pyc
+*.pyo
+mcp_stderr.log

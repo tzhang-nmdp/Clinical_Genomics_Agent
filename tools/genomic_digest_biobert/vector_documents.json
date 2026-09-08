@@ -1,0 +1,146 @@
+[
+  {
+    "page_content": "Section: Introduction\n\nPages / … / WGS BOPs\nOMICS data standard & pipeline (WGS Genomics data) (2025)\nCreated by Tao Zhang, last modified yesterday at 2:20 PM Add Approval",
+    "metadata": {
+      "doc_id": "vec_29ccd77389c104d6a178",
+      "document_id": "pdf_b7f027859c1793a2290c",
+      "heading": "Introduction"
+    }
+  },
+  {
+    "page_content": "Section: Whole genome sequencing data\n\nWhole genome sequencing was a laboratory process that determines the order of nucleotides in an organism's DNA. Our WGS data for patient cohorts with MDS were conducted by Broad Institute using a modified version of the Illumina TruSeq PCR-Free LT Library Prep method (Illumina).\nBriefly, 3-4ug gDNA was fragmented via Covaris acoustic shearing to a size of 900-1000bp. Sheared samples were then dual size selected using AMPure XP beads (Beckman Coulter) to first select for larger fragments, and secondly to select out small fragments. End repair followed the\nstandard Illumina protocol. Following End repair, a second dual size selection, identical to the first, was conducted to further select for the correct fragment size. Adenylation and Adapter ligation followed the Illumina standard protocol. Following adapter ligation, a final set of two AMPure washes\nwas completed to purify final whole genome libraries. Final qualification and quantification of libraries was conducted on a Fragment Analyzer (Advanced Analytical) and via qPCR using Universal qPCR MasterMix (Kapa Biosystems) on a CFX384 quantitative thermalcycler (Bio-Rad). Libraries\nwere pooled at 3uM and sequenced via Illumina MiSeq to QC for cluster density yield and index distribution. Samples were then normalized to appropriate concentration to load on the Illumina Novaseq 6000 (Illumina) using 2x150 paired-end sequencing on an S4 flowcell. Pool size was 12\nsamples to achieve the required 60x depth minimum for each sample. The raw bam files were generated with hg38 references.",
+    "metadata": {
+      "doc_id": "vec_fbfd4cd200e41c93a983",
+      "document_id": "pdf_b7f027859c1793a2290c",
+      "heading": "Whole genome sequencing data"
+    }
+  },
+  {
+    "page_content": "Section: MDS patient cohort of WGS data\n\nWGS dataset Sample size Clinical setup Sequencing facility\nLarge MDS cohort 494 randomized cohort Broad Institute\nSmall MDS cohort 94 case-control Medical College of Wisconsin",
+    "metadata": {
+      "doc_id": "vec_651d821c4b9628c18271",
+      "document_id": "pdf_b7f027859c1793a2290c",
+      "heading": "MDS patient cohort of WGS data"
+    }
+  },
+  {
+    "page_content": "Section: Genomic variation definition\n\nGermline variant: A variant in a reproductive cell (egg or sperm) that is in the DNA of every cell in the offspring's body, which can be passed from parent to offspring and is, therefore, hereditary.\nSomatic variant: A DNA alteration that occurs after conception in any cell of the body, except for germ cells (sperm and egg).\nSingle nucleotide variant (SNV): A DNA sequence variation that occurs when a single nucleotide (adenine, thymine, cytosine, or guanine) in the genome sequence is altered. Single nucleotide variants may be rare or common in a population.\nInsertion-deletion (Indel): A type of genetic variation that occurs when a nucleotide sequence is inserted or deleted in the genome.\nStructural variant (SV): A variation in the structure of an organism's DNA that can range in size from 50 to over a million base pairs, such as deletions, duplications, insertions, inversions and translocations.\nNon synonymous mutation: A specific type of genetic mutation that alters the amino acid sequence of a protein, such as missense, splicing, frameshift, nonsense mutations.\nNoncoding variant: A genetic variant that occurs in noncoding DNA, which is DNA that does not code for amino acids.",
+    "metadata": {
+      "doc_id": "vec_9dd79a3593d3928e761c",
+      "document_id": "pdf_b7f027859c1793a2290c",
+      "heading": "Genomic variation definition"
+    }
+  },
+  {
+    "page_content": "Section: Genomic sequencing specification\n\nChromosome (Chrom): The Chromosome number.\nPosition (POS): The genomic coordinates.\nGenotype (GT): A specific combination of genetic variant alleles at a particular gene locus, such as wild type, heterozygous or homozygous.\nQuality (Qual): The quality scores from the variant calling tool.\nRead depth (DP): The number of reads at a specific position.\nVariant allele frequency (VAF): A measure of the proportion of variant alleles in a genetic locus.\nBreakpoint: A location in a genomic sequence where related sequences are not collinear and cannot be globally aligned.\nCopy number: The number of copies of a particular sequence of DNA present in the genome of an individual.",
+    "metadata": {
+      "doc_id": "vec_8068b62a0081f3ab788e",
+      "document_id": "pdf_b7f027859c1793a2290c",
+      "heading": "Genomic sequencing specification"
+    }
+  },
+  {
+    "page_content": "Section: Genomic file format\n\nFASTQ: A standard format of text-based file that stores NGS sequences from the clusters that pass filter on a flow cell and their corresponding quality scores (http://gorgonzola.cshl.edu/pfb/2011/public/ohofmann/Papers/PDF_FASTQ.pdf).\nSAM: A tab-delimited text format consisting of a header section and an alignment section from sequence alignment/map (https://samtools.github.io/hts-specs/SAMv1.pdf).\nBAM: A compressed binary version of a SAM file that is used to represent aligned sequences.\nCRAM (Compressed Read Archive) : A highly compressed, reference-based file format for storing DNA sequencing data\nBED: A text file format used to store genomic regions as coordinates and associated annotations (https://samtools.github.io/hts-specs/BEDv1.pdf).\nVCF: A text file that stores and reports genomic sequence variations (https://samtools.github.io/hts-specs/VCFv4.2.pdf).",
+    "metadata": {
+      "doc_id": "vec_a4f6e598dbbd53341c14",
+      "document_id": "pdf_b7f027859c1793a2290c",
+      "heading": "Genomic file format"
+    }
+  },
+  {
+    "page_content": "Section: Reference genome\n\nA human genome reference sequence is an accepted representation of the human genome sequence that is used by researchers as a standard for comparison to DNA sequences generated in their studies. It aims to provide the highest-quality, best possible consensus representations of the\nsequence and structural diversity found in the human genome among populations.",
+    "metadata": {
+      "doc_id": "vec_86e7cd8ef212d0a504c8",
+      "document_id": "pdf_b7f027859c1793a2290c",
+      "heading": "Reference genome"
+    }
+  },
+  {
+    "page_content": "Section: GRCh38/ HG38\n\nhttps://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.26/\nhttps://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/\nhttps://ftp.ensembl.org/pub/release-113/fasta/homo_sapiens/dna/",
+    "metadata": {
+      "doc_id": "vec_37bfc1f7ec9dfe936b80",
+      "document_id": "pdf_b7f027859c1793a2290c",
+      "heading": "GRCh38/ HG38"
+    }
+  },
+  {
+    "page_content": "Section: Variant calling tools\n\nGermline SNV: GATK4 (https://github.com/broadinstitute/gatk)\nSomatic SNV: MUTECT2 (https://github.com/NCI-GDC/mutect2-cwl) / OCTOPUS (https://github.com/luntergroup/octopus)\nStructural variant: Parliament2 (https://github.com/fritzsedlazeck/parliament2) / ChromoSeq (https://github.com/genome/docker-basespace_chromoseq)",
+    "metadata": {
+      "doc_id": "vec_65f746b53fd9e85b3bc2",
+      "document_id": "pdf_b7f027859c1793a2290c",
+      "heading": "Variant calling tools"
+    }
+  },
+  {
+    "page_content": "Section: Variant annotation tools\n\nSnpEff: https://pcingola.github.io/SnpEff/\nAnnovar: https://annovar.openbioinformatics.org/en/latest/\nVEP: https://useast.ensembl.org/info/docs/tools/vep/index.html",
+    "metadata": {
+      "doc_id": "vec_ba9d04063567fd9d24f5",
+      "document_id": "pdf_b7f027859c1793a2290c",
+      "heading": "Variant annotation tools"
+    }
+  },
+  {
+    "page_content": "Section: Variant annotation database\n\n(Normal population frequency / cancer patient frequency / variant function prediction / clinical classification)\nDatabase Name Explanation\n1000g (V3 data sets) alternative allele frequency data in 1000 Genomes Project\navsift whole-exome SIFT scores for non-synonymous variants (obselete and should not be uesd any more)\navsnp151 dbSNP151 with allelic splitting\ncadd CADD\nclinvar_20131105 CLINVAR database with Variant Clinical Significance (unknown, untested, non-pathogenic, probable-non-pathogenic, probable-pathogenic, pathogenic, drug-response, histocompatibility, other) and Variant disease name\ncosmic68wgs COSMIC database version 68 on WGS data\ndbnsfp42c dbNSFP version 4.7c for commercial use\ndbscsnv11 dbscSNV version 1.1 for splice site prediction by AdaBoost and Random Forest\neigen whole-genome Eigen scores\nensGene FASTA sequences for all annotated transcripts in wgEncodeGencodeManualV3 collection (last update was 2010-02-28 at UCSC)\nesp6500siv2_all alternative allele frequency in All subjects in the NHLBI-ESP project with 6500 exomes, including the indel calls and the chrY calls. This is lifted over from hg19 by myself.\nexac03 ExAC 65000 exome allele frequency data for ALL, AFR (African), AMR (Admixed American), EAS (East Asian), FIN (Finnish), NFE (Non-finnish European), OTH (other), SAS (South Asian)). version 0.3. Left normalization done.\nfathmm whole-genome FATHMM_coding and FATHMM_noncoding scores (noncoding and coding scores in the 2015 version was reversed)\ngene4denovo201907 gene4denovo database\ngerp++gt2 whole-genome GERP++ scores greater than 2 (RS score threshold of 2 provides high sensitivity while still strongly enriching for truly constrained sites.",
+    "metadata": {
+      "doc_id": "vec_5c019af16d287a390d46",
+      "document_id": "pdf_b7f027859c1793a2290c",
+      "heading": "Variant annotation database"
+    }
+  },
+  {
+    "page_content": "Section: Variant annotation database\n\ncoding scores in the 2015 version was reversed)\ngene4denovo201907 gene4denovo database\ngerp++gt2 whole-genome GERP++ scores greater than 2 (RS score threshold of 2 provides high sensitivity while still strongly enriching for truly constrained sites. )\ngnomad_exome gnomAD exome collection (v2.0.1)\ngnomad_genome gnomAD genome collection (v2.0.1)\nGTEx_v8_eQTL Expression Quantitative Trait Loci (eQTL) across tissues based on GTEx v8\nGTEx_v8_sQTL Splicing Quantitative Trait Loci (sQTL) across tissues based on GTEx v8\ngwava whole genome GWAVA_region_score and GWAVA_tss_score (GWAVA_unmatched_score has bug in file), see ref.\nhrcr1 40 million variants from 32K samples in haplotype reference consortium\nicgc28 International Cancer Genome Consortium version 28\nintervar_20180118 InterVar: clinical interpretation of missense variants (indels not supported)\nkaviar_20150923 170 million Known VARiants from 13K genomes and 64K exomes in 34 projects\nknownGene FASTA sequences for all annotated transcripts in UCSC Known Gene (last update was 2009-05-10 at UCSC)\nljb26_all whole-exome SIFT, PolyPhen2 HDIV, PolyPhen2 HVAR, LRT, MutationTaster, MutationAssessor, FATHMM, MetaSVM, MetaLR, VEST, CADD, GERP++, PhyloP and SiPhy scores from dbNSFP version 2.6\nmcap M-CAP scores for non-synonymous variants\nmitimpact2 pathogenicity predictions of human mitochondrial missense variants (see here\nnci60 NCI-60 human tumor cell line panel exome sequencing allele frequency data\nrefGene FASTA sequences for all annotated transcripts in RefSeq Gene (last update was 2020-08-22 at UCSC)\nregsnpintron prioritize the disease-causing probability of intronic SNVs\nrevel REVEL scores for non-synonymous variants\nsnp138 dbSNP with ANNOVAR index files, after removing those flagged SNPs (SNPs < 1% minor allele frequency (M",
+    "metadata": {
+      "doc_id": "vec_c2ba118a63cdc2705db0",
+      "document_id": "pdf_b7f027859c1793a2290c",
+      "heading": "Variant annotation database"
+    }
+  },
+  {
+    "page_content": "Section: Variant annotation database\n\n2020-08-22 at UCSC)\nregsnpintron prioritize the disease-causing probability of intronic SNVs\nrevel REVEL scores for non-synonymous variants\nsnp138 dbSNP with ANNOVAR index files, after removing those flagged SNPs (SNPs < 1% minor allele frequency (MAF) (or unknown), mapping only once to reference assembly, flagged in dbSnp as \"clinically associated\")",
+    "metadata": {
+      "doc_id": "vec_aa279cf8b4b33585f515",
+      "document_id": "pdf_b7f027859c1793a2290c",
+      "heading": "Variant annotation database"
+    }
+  },
+  {
+    "page_content": "Section: Related study summary\n\nPrimary_outcome Cohort_size Sample_source Omics_platform Analytic_subject Primary_analysis Gene_Variant_Pathway Genomic_coordinates\nOverall Survival 494 Recipient WGS Somatic SNVs nonsynomynous variant+ gene burden test TP53 chr17:7668401-7687550(-)\nOverall Survival 494 Recipient WGS Somatic SNVs nonsynomynous variant+ gene burden test HCN2 chr19:589880-617159(+)\nOverall Survival 494 Recipient WGS Somatic SNVs all variant+ gene burden test ABCA13 chr7:48171457-48647497(+)\nOverall Survival 494 Recipient WGS Somatic SNVs all variant+ gene burden test DCAF13P1-RNU6-392P chr7:106126700-106208167(+)\nOverall Survival 494 Recipient WGS Somatic SNVs all variant+ gene burden test DLX5 chr7:97020395-97024831(-)\nOverall Survival 494 Recipient WGS Somatic SNVs all variant+ gene burden test EFHC2 chrX:44147871-44343672(-)\nOverall Survival 494 Recipient WGS Somatic SNVs all variant+ gene burden test TP53 chr17:7668401-7687550(-)\nOverall Survival 494 Recipient WGS Somatic SNVs all variant+ sliding window test ABCA13 chr7:48171457-48647497(+)\nOverall Survival 494 Recipient WGS Somatic SNVs all variant+ sliding window test ABI3BP chr3:100788685-100798639(-)\nOverall Survival 494 Recipient WGS Somatic SNVs all variant+ sliding window test ARHGEF7 chr13:111120076-111124439(-)\nOverall Survival 494 Recipient WGS Somatic SNVs all variant+ sliding window test DLX5 chr7:97020395-97024831(-)\nOverall Survival 494 Recipient WGS Somatic SNVs all variant+ sliding window test MIR7515 chr2:6648141-6655774(+)\nOverall Survival 494 Recipient WGS Somatic SNVs all variant+ sliding window test RASGRF1 chr15:78982520-78991522(-)\nOverall Survival 494 Recipient WGS Somatic SNVs all variant+ sliding window test SLIT3 chr5:168757016-168762458(-)\nOverall Survival 494 Recipient WGS Somatic SNVs all variant+ slidin",
+    "metadata": {
+      "doc_id": "vec_7d8898bc7318eb76f080",
+      "document_id": "pdf_b7f027859c1793a2290c",
+      "heading": "Related study summary"
+    }
+  },
+  {
+    "page_content": "Section: Related study summary\n\nall variant+ sliding window test RASGRF1 chr15:78982520-78991522(-)\nOverall Survival 494 Recipient WGS Somatic SNVs all variant+ sliding window test SLIT3 chr5:168757016-168762458(-)\nOverall Survival 494 Recipient WGS Somatic SNVs all variant+ sliding window test SPAG16 chr2:214187490-214187687(+)\nOverall Survival 494 Recipient WGS Somatic SNVs all variant+ sliding window test TP53 chr17:7668401-7687550(-)\nOverall Survival 301 Recipient WGS Somatic SNVs nonsynomynous variant + gene burden test DDX11 chr12:31073859-31104799(+)\nOverall Survival 494 Recipient WGS All SNVs clustering based test TP53 + del5q N/A\nOverall Survival 494 Recipient WGS All SNVs clustering based test cluster (common variants) N/A\nOverall Survival 494 Recipient WGS All SNVs clustering based test cluster (rare variants) N/A\nOverall Survival 494 Recipient WGS Mitochondrial SNVs all variant+ gene burden test MT-CYB chrM:14747-15887(+)\nOverall Survival 494 Recipient WGS Mitochondrial SNVs all variant+ gene burden test MT-ND2 chrM:4470-5511(+)\nOverall Survival 494 Recipient WGS Mitochondrial SNVs all variant+ gene burden test MT-ND4 chrM:10760-12137(+)\nOverall Survival 494 Donor WGS Germline SNVs common variant + variant level association test rs111224634 (TRBV6) chr7:142508964\nRelapse 94 Recipient RRBS Methylation DMRs Mann Whitney test (case-control) TP53 N/A\nRelapse 94 Recipient Somalogic Plasma protein GSEA test (case-control) Complement pathway N/A\nRelapse 94 Recipient Somalogic Plasma protein GSEA test (case-control) Allograft rejection pathway N/A\nRelapse 494 Recipient WGS Somatic SNVs all variant+ sliding window test TP53 chr17:7668401-7687550(-)\nRelapse 494 Recipient WGS Somatic SNVs all variant+ sliding window test HNRNPA3 chr2:177212794-177223959(+)\nRelapse 494 Recipient WGS Somatic SNVs all v",
+    "metadata": {
+      "doc_id": "vec_aa14fa7632197b02496e",
+      "document_id": "pdf_b7f027859c1793a2290c",
+      "heading": "Related study summary"
+    }
+  },
+  {
+    "page_content": "Section: Related study summary\n\npse 494 Recipient WGS Somatic SNVs all variant+ sliding window test TP53 chr17:7668401-7687550(-)\nRelapse 494 Recipient WGS Somatic SNVs all variant+ sliding window test HNRNPA3 chr2:177212794-177223959(+)\nRelapse 494 Recipient WGS Somatic SNVs all variant+ sliding window test TENM2 chr5:166979029-168264157(+)\nRelapse 494 Recipient WGS Germline SNVs rare variant+ gene burden test HSPC324 chr9:136648610-136660421(-)\nRelapse 494 Recipient WGS Germline SNVs common variant+ variant level association test chr12:16758807:T:TA (ENSG00000283240) chr12:16758807\nRelapse 494 Recipient WGS Germline SNVs common variant+ variant level association test chr22:15882060:CA:C (NBEAP3) chr22:15882060\nRelapse 494 Recipient WGS Germline SNVs common variant+ variant level association test rs75650711 (NEPRO-AS1) chr3:113022651\nRelapse 494 Recipient WGS Germline SNVs common variant+ variant level association test rs78524564 (P2RY1-HMGN2P13) chr3:153012756\nRelapse 494 Recipient WGS Germline SNVs common variant+ variant level association test rs1395271248 (HCN1-EMB) chr5:47052329\nRelapse 494 Recipient WGS Germline SNVs common variant+ variant level association test rs379064 (POM121) chr7:72945543\nRelapse 494 Recipient WGS Structural variants variant level association test chr9:64632801-64636400:<DEL> chr9:64632801-64636400",
+    "metadata": {
+      "doc_id": "vec_c6f96cca36453130916e",
+      "document_id": "pdf_b7f027859c1793a2290c",
+      "heading": "Related study summary"
+    }
+  },
+  {
+    "page_content": "Section: Related BOP\n\nStandard Data Process for WGS data: https://confluence.nmdp.org/download/attachments/192021193/CIBMTR_SOP_WGS_PROCESS_PIPELINE_v1.docx?version=1&modificationDate=1620405506943&api=v2\nStandard Analytic Process for WGS data: https://confluence.nmdp.org/download/attachments/192021193/CIBMTR_SOP_WGS_ANALYTIC_PIPELINE.docx?version=1&modificationDate=1620405505540&api=v2\nSupervised Clustering analytic pipeline: https://confluence.nmdp.org/display/BIO/Supervised+Clustering+of+WGS_Data+for+Post-HCT+Survival+Outcome+Modeling\nCox regression modeling for association of clinical outcomes and genomic data: https://confluence.nmdp.org/pages/viewpage.action?pageId=192021104\nCYTO-SV-ML pipeline for cytogenetic structural variation classification using WGS data: https://confluence.nmdp.org/display/BIO/CYTO-SV-ML+pipeline+for+cytogenetic+structural+variation+classification+using+WGS+data",
+    "metadata": {
+      "doc_id": "vec_64591b2b470f2e8be5af",
+      "document_id": "pdf_b7f027859c1793a2290c",
+      "heading": "Related BOP"
+    }
+  },
+  {
+    "page_content": "Section: References\n\nGDR data inventory: https://confluence.nmdp.org/pages/viewpage.action?spaceKey=BIO&title=Data+Types+on+GDR\nGenomics Projects: Immunobiology Research Team Genomics Projects\nIn-house WGS processing pipeline: https://github.com/nmdp-bioinformatics/sv-qc-analysis-pipeline\nIn-house WGS somatic variation pipeline: https://github.com/luntergroup/octopus\nIn-house WGS structural variation pipeline: https://github.com/tzhang-nmdp/CYTO-SV-ML\nIn-house WGS annotation pipeline: https://github.com/tzhang-nmdp/WGS_annotation_pipeline\nIn-house WGS analytic pipeline: https://github.com/tzhang-nmdp/WGS_ANALYTIC_PIPELINE\nNo labels\nPowered by a free Atlassian Confluence Community License granted to NMDP. Evaluate Confluence today.",
+    "metadata": {
+      "doc_id": "vec_caf1a489b5fdffa87b0f",
+      "document_id": "pdf_b7f027859c1793a2290c",
+      "heading": "References"
+    }
+  }
+]

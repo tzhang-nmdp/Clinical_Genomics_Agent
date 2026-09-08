@@ -1,0 +1,24 @@
+# Model files — mounted as volumes at runtime
+gemma-4-E2B-it-GGUF/
+MedEmbed-large-v0.1/
+Sentence-BioBert-snli/
+medical-faiss-db/
+
+# Dev / notebook artifacts
+data/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.ipynb
+**/.git
+**/.gitattributes
+
+# Duplicate / backup source files
+subagents/*Copy*
+subagents/*orig*
+
+# Logs — written at runtime, not part of the image
+logs/
+
+# Local config overrides
+mcp_servers.json

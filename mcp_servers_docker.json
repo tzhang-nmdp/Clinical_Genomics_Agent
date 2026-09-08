@@ -1,0 +1,44 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PAT}"
+      },
+      "transport": "stdio"
+    },
+    "weather": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/app/mcp_servers",
+        "run",
+        "weather_mcp_server.py"
+      ],
+      "transport": "stdio"
+    },
+    "geocoding": {
+      "command": "python",
+      "args": ["-m", "geocode_mcp.server"],
+      "transport": "stdio"
+    },
+    "google-search": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/app/mcp_servers",
+        "run",
+        "google_search_mcp_server.py"
+      ],
+      "env": {
+        "GOOGLE_API_KEY": "${GOOGLE_API_KEY}",
+        "GOOGLE_SEARCH_ENGINE_ID": "${GOOGLE_SEARCH_ENGINE_ID}"
+      },
+      "transport": "stdio"
+    }
+  }
+}
