@@ -6,24 +6,7 @@ A FastAPI-based ReAct agent for the CIBMTR database that answers clinical and ge
 
 ## Architecture
 
-```
-User (Web UI / WhatsApp)
-        │
-        ▼
-  FastAPI server (server.py)
-        │
-        ▼
-  LangGraph ReAct Agent  ←──  build_prompt() + MemorySaver
-        │
-   ┌────┴──────────────────────────┐
-   ▼                               ▼
-ClinicalSubAgent             GenomicSubAgent
-(BM25 + dense re-rank        (SQL + BM25 + FAISS/RRF
- over FAISS medical docs)     over DuckDB genomic catalog)
-                                   │
-                              gene_map_tools
-                         (dbNSFP4.0 gene info lookup)
-```
+![Clinical_Genomics_Agent Architecture](Model_architecture.png)
 
 **LLM:** `gemma-4-E2B-it-Q4_0` served by llama.cpp on port 8080 (OpenAI-compatible API).  
 **Embedding models:** `MedEmbed-large-v0.1` (clinical), `Sentence-BioBert-snli` (genomic).
