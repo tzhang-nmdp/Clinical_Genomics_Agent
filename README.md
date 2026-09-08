@@ -82,7 +82,7 @@ pip install -r requirements_docker.txt
 # Start llama.cpp server separately, then:
 uvicorn server:app --host 0.0.0.0 --port 8000
 ```
-![Clinical_Genomics_Agent Interface](Clinical_Genomics_Agent.png)
+![Clinical_Genomics_Agent Interface](Clinical_Genomics_Agent_2.png)
 
 ---
 
